@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Счетчик калорий</h1>
+        <div class="tab">
+            <section class="sex">
+                <h2>Пол</h2>
+                <div class="sex-btns">
+                <input type="button" name="sex" value="Мужчина" class = "btn active">
+                <input type="button" name="sex" value="Женщина" class = "btn">
+                </div>
+            </section>
+            <section class="bio-info">
+                <div class="bio-tab">
+                    <h2>Возраст <span>лет</span></h2>
+                    <input type="number" placeholder = "0" name="age" id="age" value = '25'>
+                </div>
+                <div class="bio-tab">
+                    <h2>Рост <span>см</span></h2>
+                    <input type="number" name="height" id="height" placeholder = "0" value = '25'>
+                </div>
+                <div class="bio-tab">
+                    <h2>Вес <span>кг</span></h2>
+                    <input type="number" name="weight" id="weight" placeholder = "0" value = '25'>
+                </div>
+            </section>
+            <section class="activity">
+                <h2>Физическая активность</h2>
+                <div class="radio">
+                    <label for=""><input type="radio" name="phys" id="">Минимальная</label>
+                    <p>Сидячая работа и нет физических нагрузок</p>
+                </div>
+                <div class="radio">
+                    <label for=""><input type="radio" name="phys" id="">Низкая</label>
+                    <p>Редкие нерегулярыне тренировки, активность в быту</p>
+                </div>
+                <div class="radio">
+                    <label for=""><input type="radio" name="phys" id="">Средняя</label>
+                    <p>Тренировки 3-5 раз в неделю</p>
+                </div>
+                <div class="radio">
+                    <label for=""><input type="radio" name="phys" id="">Высокая</label>
+                    <p>Тренировка 6-7 раз в неделю</p>
+                </div>
+                <div class="radio">
+                    <label for=""><input type="radio" name="phys" id="">Очень высокая</label>
+                    <p>Больше 6 тренировок в неделю и физическая работа</p>
+                </div>
+            </section>
+            <section class="spanmit">
+                <button id = "solve" disabled="disabled">Рассчитать</button>
+                <button id="reset">Очистить поля и расчет</button>
+            </section>
+        </div>
+        <div class = 'result-info'>
+            <h2>Ваша норма каллорий</h2>
+            <div>
+            <div class="sub-result">
+                <h3></h3>
+                <p>поддержание <br> веса</p>
+            </div>
+            <div class="sub-result">
+                <h3></h3>
+                <p>снижение <br> веса</p>
+            </div>
+            <div class="sub-result">
+                <h3></h3>
+                <p>набор <br> веса</p>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
