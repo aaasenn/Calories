@@ -3,7 +3,7 @@
 ![](demo/demo1.jpg) ![](demo/demo2.jpg)
 
 ___
-[Предпросмотр](https://aaasenn.github.io/Calories)
+
 ## Техническое задание
  
 
