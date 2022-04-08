@@ -9,55 +9,55 @@
 </head>
 <body>
     <div class="wrapper">
-        <h1>Счетчик калорий</h1>
+        <h1>Счётчик калорий</h1>
         <div class="tab">
             <section class="sex">
                 <h2>Пол</h2>
                 <div class="sex-btns">
-                <input type="button" name="sex" value="Мужчина" class = "btn active">
-                <input type="button" name="sex" value="Женщина" class = "btn">
+                <input type="button" name="sex" data-sex = 'men' value="Мужчина" class = "btn active">
+                <input type="button" name="sex" data-sex = 'women' value="Женщина" class = "btn">
                 </div>
             </section>
             <section class="bio-info">
                 <div class="bio-tab">
                     <h2>Возраст <span>лет</span></h2>
-                    <input type="number" placeholder = "0" name="age" id="age" value = '25'>
+                    <input type="number" maxlength = '3' placeholder = "0" name="age" id="age" value>
                 </div>
                 <div class="bio-tab">
                     <h2>Рост <span>см</span></h2>
-                    <input type="number" name="height" id="height" placeholder = "0" value = '25'>
+                    <input type="number" maxlength = '3' name="height" id="height" placeholder = "0" value>
                 </div>
                 <div class="bio-tab">
                     <h2>Вес <span>кг</span></h2>
-                    <input type="number" name="weight" id="weight" placeholder = "0" value = '25'>
+                    <input type="number" maxlength = '3' name="weight" id="weight" placeholder = "0" value>
                 </div>
             </section>
             <section class="activity">
                 <h2>Физическая активность</h2>
                 <div class="radio">
-                    <label for=""><input type="radio" name="phys" id="">Минимальная</label>
+                    <label for="min"><input type="radio" name="phys" id="min" checked>Минимальная</label>
                     <p>Сидячая работа и нет физических нагрузок</p>
                 </div>
                 <div class="radio">
-                    <label for=""><input type="radio" name="phys" id="">Низкая</label>
+                    <label for="low"><input type="radio" name="phys" id="low">Низкая</label>
                     <p>Редкие нерегулярыне тренировки, активность в быту</p>
                 </div>
                 <div class="radio">
-                    <label for=""><input type="radio" name="phys" id="">Средняя</label>
+                    <label for="mid"><input type="radio" name="phys" id="mid">Средняя</label>
                     <p>Тренировки 3-5 раз в неделю</p>
                 </div>
                 <div class="radio">
-                    <label for=""><input type="radio" name="phys" id="">Высокая</label>
+                    <label for="high"><input type="radio" name="phys" id="high">Высокая</label>
                     <p>Тренировка 6-7 раз в неделю</p>
                 </div>
                 <div class="radio">
-                    <label for=""><input type="radio" name="phys" id="">Очень высокая</label>
+                    <label for="extreme"><input type="radio" name="phys" id="extreme">Очень высокая</label>
                     <p>Больше 6 тренировок в неделю и физическая работа</p>
                 </div>
             </section>
             <section class="spanmit">
-                <button id = "solve" disabled="disabled">Рассчитать</button>
-                <button id="reset">Очистить поля и расчет</button>
+                <button id = "solve" disabled>Рассчитать</button>
+                <button id="reset" disabled>Очистить поля и расчет</button>
             </section>
         </div>
         <div class = 'result-info'>

@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+ margin: 0;
+ padding: 0;
+}
+html {
+ -webkit-text-size-adjust: 100%;
+ font-family: 'PT Sans', sans-serif;
+}
+header,
+section,
+main,
+nav,
+footer,
+article,
+figure,
+hgroup {
+ display: block;
+ width: 100%;
+}
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+h2 span {
+    font-weight: normal;
+    font-size: 0.7em;
+}
+body {
+    background-image: url(img/main-background.jpg);
+}
+
+h2 {
+    font-size: 32px;
+    letter-spacing: normal;
+}
+input[type=radio]:checked + label:before,
+input[type=checkbox]:checked + label:before{
+  background-color:gold;
+}
+.wrapper {
+    display: block;
+    width: 560px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 60px;
+    /* letter-spacing: 0.05em; */
+    color: white;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+/* Стили для раздела "Пол" */
+.tab {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 25px;
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+.sex {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.sex-btns {
+    /* width: 400px; */
+    border: 1px solid #FF851B;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between; 
+    width: inherit;
+}
+.btn {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: block;
+    flex-grow: 1;
+    border: none;
+    text-align: center;
+    background-color: transparent;
+    cursor: pointer;
+}
+.btn:hover {
+    cursor: pointer;
+    color: #FF851B;
+    transition-duration: 0.3s;
+}
+.active {
+    background-color: #FF851B;
+    color: white;
+    transition-duration: 0.3s;
+}
+.active:hover {
+    color: white;
+}
+
+.sex h2 {
+    align-self: start;
+}
+
+.sex input {
+    font-size: 18px;
+}
+
+/* Стили для раздела ввода данных(ВЕС, ВОЗРАСТ, РОСТ) */
+.bio-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bio-info h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.bio-info h2 span {
+    color: #dcdcdc;
+    font-size: 18px;
+}
+
+.bio-tab:last-child {
+    margin-left: 40px;
+}
+
+.bio-tab input {
+    box-sizing: border-box;
+    width: 80px;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.bio-tab input:focus {
+    outline: none;
+}
+
+.bio-tab input:hover {
+    border: 1px solid #FF851B;
+    transition-duration: 0.5s;
+}
+section {
+    margin-bottom: 30px;
+}
+h2 {
+    margin-bottom: 10px;
+}
+
+/* Radio Section*/
+.radio {
+    font-size: 20px;
+    /* font-weight: bold; */
+    margin-bottom: 20px;
+}
+.radio p {
+    color: #dcdcdc;
+    font-size: 18px;
+    margin-left: 24px;
+}
+.radio input {
+    margin-right: 10px;
+}
+.radio label:hover {
+    color:#FF851B;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+.radio input:hover+checked {
+    color: #FF851B;
+    cursor: pointer;
+}
+radio label {
+    margin-bottom: 16px;
+}
+
+/* РЕЗУЛЬТАТ информация*/
+
+section.bio {
+    display: flex;
+}
+.result-info {
+    background-color: #fff;
+    border-radius: 16px;
+    margin-top: 20px;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    display: none;
+    transition-duration: 0.3s;
+}
+.result-info div {
+    display: flex;
+    justify-content: space-between;
+}
+.sub-result {
+    display: flex;
+    flex-direction: column;
+    color: #dcdcdc;
+}
+.result-info h2 {
+    margin-bottom: 16px;
+    color:#FF851B
+}
+
+h3 {
+    font-weight: bold;
+    color: black;
+}
+
+/* Solve buttons */
+
+#solve {
+    font-size: 24px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: none;
+    background-color: rgba(253, 125, 54);
+    color: white;
+    border-radius: 4px;
+    margin-right: 40px;
+}
+#solve:hover {
+    background-color: rgba(253, 125, 54, .5);
+    cursor: pointer;
+}
+#solve:disabled {
+    font-size: 24px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #dcdcdc;
+    color: white;
+    border-radius: 4px;
+    margin-right: 40px;
+}
+
+#reset {
+    color: #fd3636;
+    font-size: 20px;
+    background: none;
+    background-color: none;
+    border: none;
+}
+#reset:disabled {
+    color: rgb(220, 220, 220);
+}
+
+#reset:hover {
+    cursor: pointer;
+}
+.spanmit {
+    margin-bottom: 5px;
+}
+
