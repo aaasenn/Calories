@@ -234,6 +234,7 @@ h3 {
     margin-right: 40px;
 }
 #solve:hover {
+    transition-duration: 0.3s;
     background-color: rgba(253, 125, 54, .5);
     cursor: pointer;
 }
@@ -261,6 +262,8 @@ h3 {
 
 #reset:hover {
     cursor: pointer;
+    color: #df5052;
+    transition-duration: 0.3s;
 }
 .spanmit {
     margin-bottom: 5px;
