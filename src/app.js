@@ -1,6 +1,3 @@
-import 'fonts'
-import 'img'
-import 'style.css'
 const btns = document.querySelectorAll('.btn')
 const age = document.querySelector("#age")
 const height = document.querySelector("#height")
